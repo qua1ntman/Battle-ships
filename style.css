@@ -1,0 +1,335 @@
+body {
+    display: flex;
+    /*justify-content: center;*/
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+.upper-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    width: 1900px;
+    height: 700px;
+}
+
+.form {
+    height: 29px;
+    width: 80px;
+}
+
+.whose-turn {
+    position: relative;
+    width: 1800px;
+
+    /*height: 100px;*/
+    margin-bottom: 30px;
+
+    font-size: 25px;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+
+    width: 1900px;
+    height: 600px;
+}
+
+.rotate-text {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.player1 {
+    width: 850px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    /*padding-left: 250px;*/
+    background-color: #ffbdbd;
+
+}
+
+.player2 {
+    width: 850px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    /*padding-left: 250px;*/
+    background-color: #a4a4ff;
+}
+
+.add-and-field {
+    width: 850px;
+    height: 545px;
+    display: flex;
+
+}
+
+.choose-ship {
+    width: 315px;
+    height: 545px;
+
+    border-right: 2px black solid;
+
+}
+
+.doesnt-see-ships {
+    position: absolute;
+    width: 315px;
+    height: 545px;
+    z-index: 100;
+}
+
+.blue-back {
+    background-color: #a4a4ff;
+
+}
+
+.red-back {
+    background-color: #ffbdbd;
+}
+
+.accepted-ships {
+    display: grid;
+    grid-template-rows: 70px 140px 70px 70px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.usual-ship {
+    /*width: auto;*/
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    text-align: center;
+    /*padding: 20px 20px;*/
+}
+
+.ship-1-container {
+    display: grid;
+    grid-template-columns:65px 65px 65px 65px;
+    justify-content: space-around;
+}
+
+.ship-1 {
+    height: 44px;
+    width: 44px;
+}
+
+.ship-2-container {
+    display: grid;
+    grid-template-columns: 120px 120px;
+}
+
+.ship-2 {
+    height: 44px;
+    width: 88px;
+}
+
+.ship-3 {
+    height: 44px;
+    width: 132px;
+}
+
+.ship-4 {
+    height: 44px;
+    width: 176px;
+}
+
+.ship-5 {
+    height: 44px;
+    width: 220px;
+}
+
+.square-container {
+    position: relative;
+    height: 485px;
+    width: 485px;
+
+    display: grid;
+
+
+    grid-template-columns: 46px 443px ;
+
+    justify-content: right;
+    text-align: center;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    /*padding-right: 20px;*/
+}
+
+.curtain {
+    position: absolute;
+
+    width: 850px;
+    height: 545px;
+
+    /*background-color: white;*/
+    /*opacity: .3;*/
+
+    z-index: 105;
+}
+
+.spacer {
+    width: 46px;
+    height: 42px;
+}
+
+.letters {
+
+
+    width: 440px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.letter {
+    height: 42px;
+    width: 42px;
+    border-left: 1px solid #d0d0d0;
+    border-right: 1px solid #d0d0d0;
+}
+
+.numbers {
+
+    width: 46px;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.number {
+    height: 44px;
+    width: 46px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    border-top: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+
+
+
+.square {
+    position: relative;
+
+
+    border: 2px solid black;
+    height: 450px;
+    width: 450px;
+    margin: 0;
+    padding: 0;
+}
+
+.square-inside {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 44px 44px 44px 44px 44px 44px 44px 44px 44px 44px ;
+    /*grid-template-columns: 42px;*/
+    background-color: white;
+
+    /*border: 2px solid black;*/
+    height: 440px;
+    width: 439px;
+
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    /*margin-left: 2px;*/
+    padding: 0;
+}
+
+.unit-cell {
+    position: relative;
+    width: 42px;
+    /*height: 42px;*/
+
+    border: 1px solid #696969;
+}
+
+.white-cell {
+    background-color: white;
+}
+
+.white-cell:hover {
+    background-color: #d0d0d0;
+}
+
+.blue-cell {
+    background-color: blue;
+}
+
+.blue-cell:hover {
+    background-color: #0060ff;
+}
+
+.red-cell {
+    background-color: red;
+}
+
+.red-cell:hover {
+    background-color: #fd5252;
+}
+
+
+
+.grey-cell {
+    background-color: dimgrey;
+}
+
+.start {
+    position: relative;
+    top: 150px;
+    height: 35px;
+    /*width: 1800px;*/
+
+
+    /*left: -1000px;*/
+}
+
+.btns {
+    height: 24px;
+    width: 100%;
+}
+
+.start-btn {
+    font-size: 25px;
+}
